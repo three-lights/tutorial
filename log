@@ -1,0 +1,55 @@
+/usr/local/bin/python3 /Users/apple/PycharmProjects/tutorial/models/smallNet.py
+Net(
+  (conv1_1): Conv2d(3, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv1_2): Conv2d(64, 64, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (maxpool1): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (bn1): BatchNorm2d(64, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv2_1): Conv2d(64, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv2_2): Conv2d(128, 128, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (maxpool2): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (bn2): BatchNorm2d(128, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv3_1): Conv2d(128, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv3_2): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv3_3): Conv2d(256, 256, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (maxpool3): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (bn3): BatchNorm2d(256, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv4_1): Conv2d(256, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv4_2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv4_3): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (maxpool4): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (bn4): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (conv5_1): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv5_2): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (conv5_3): Conv2d(512, 512, kernel_size=(3, 3), stride=(1, 1), padding=(1, 1))
+  (maxpool5): MaxPool2d(kernel_size=2, stride=2, padding=0, dilation=1, ceil_mode=False)
+  (bn5): BatchNorm2d(512, eps=1e-05, momentum=0.1, affine=True, track_running_stats=True)
+  (drop_out): Dropout(p=0.5, inplace=False)
+  (fc1): Linear(in_features=512, out_features=4096, bias=True)
+  (fc2): Linear(in_features=4096, out_features=4096, bias=True)
+  (fc3): Linear(in_features=4096, out_features=10, bias=True)
+)
+--------------------------------------------------------
+0 ... 1000 Image, Loss: 2.322602, Acc: 0.106000
+--------------------------------------------------------
+1000 ... 2000 Image, Loss: 2.326282, Acc: 0.090000
+--------------------------------------------------------
+2000 ... 3000 Image, Loss: 2.332716, Acc: 0.092000
+--------------------------------------------------------
+3000 ... 4000 Image, Loss: 2.324124, Acc: 0.091000
+--------------------------------------------------------
+4000 ... 5000 Image, Loss: 2.314755, Acc: 0.098000
+--------------------------------------------------------
+5000 ... 6000 Image, Loss: 2.318675, Acc: 0.095000
+--------------------------------------------------------
+6000 ... 7000 Image, Loss: 2.311968, Acc: 0.114000
+--------------------------------------------------------
+7000 ... 8000 Image, Loss: 2.310982, Acc: 0.095000
+--------------------------------------------------------
+8000 ... 9000 Image, Loss: 2.311642, Acc: 0.108000
+--------------------------------------------------------
+9000 ... 10000 Image, Loss: 2.316170, Acc: 0.091000
+----------------eval----------------
+--------------------------------------------------------
+Loss: 2.316302, Acc: 0.094000
+
+Process finished with exit code 0
